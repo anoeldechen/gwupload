@@ -8,15 +8,15 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using System.Net;
-using System.Net.Http;
+// using System.Net;
+// using System.Net.Http;
 
 namespace UploadWebApp.Helpers
 {
     public static class StorageHelper
     {
 
-        [HttpPost(""), DisableRequestSizeLimit]
+		// [DisableRequestSizeLimit]
         public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName,
                                                             AzureStorageConfig _storageConfig)
         {
