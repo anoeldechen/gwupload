@@ -14,7 +14,7 @@ namespace UploadWebApp.Helpers
     public static class StorageHelper
     {
 
-        
+        [HttpPost(""), DisableRequestSizeLimit]
         public static async Task<bool> UploadFileToStorage(Stream fileStream, string fileName,
                                                             AzureStorageConfig _storageConfig)
         {
